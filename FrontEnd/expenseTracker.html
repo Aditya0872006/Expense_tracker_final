@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="expensestyle.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- 🔹 Username on Top -->
+    <div class="user-info">
+      <h2>Welcome, <span id="usernameDisplay">User</span> 👋</h2>
+    </div>
+
+    <!-- TOP BALANCE CARD -->
+    <div class="balance-card">
+      <h3>Total Balance</h3>
+      <h1 id="balance">₹0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money plus">₹0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money minus">₹0.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRANSACTION HISTORY -->
+    <div class="transactions">
+      <h3>Transactions</h3>
+      <ul id="list" class="list"></ul>
+    </div>
+
+    <!-- ADD NEW TRANSACTION -->
+    <div class="add-transaction">
+      <h3>Add Transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Name</label>
+          <input type="text" id="text" placeholder="Enter transaction name..." />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="expense_script.js"></script>
+</body>
+</html>
